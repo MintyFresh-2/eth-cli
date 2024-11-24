@@ -14,6 +14,7 @@ pub enum Commands {
         #[command(subcommand)]
         command: Option<BlockCommands>,
     },
+    Transaction,
 }
 
 #[derive(Subcommand)]
