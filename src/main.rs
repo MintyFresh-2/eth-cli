@@ -1,11 +1,10 @@
 mod cli;
+mod rpc_url;
 use alloy::providers::{Provider, ProviderBuilder};
 use clap::Parser;
 use cli::{BlockCommands, Commands};
 use eyre::Result;
-
-// const RPC_URL: &str = "https://eth-mainnet.g.alchemy.com/v2/xGVIcO70-O7Bd8_DSfR2yomVI2hrvKZE";
-const RPC_URL: &str = "https://polygon-amoy.g.alchemy.com/v2/xGVIcO70-O7Bd8_DSfR2yomVI2hrvKZE";
+use rpc_url::RPC_URL;
 
 #[tokio::main]
 async fn main() -> Result<()> {
